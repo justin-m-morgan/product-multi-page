@@ -1,10 +1,12 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Section from '../components/ui/Section'
+import Main from '../components/ui/Main'
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <Main>
+      <Section>
+        <p>This is as section</p>
+      </Section>
+    </Main>
+  )
 }
