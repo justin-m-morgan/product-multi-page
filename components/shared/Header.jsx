@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Logo from '../svg/Logo'
 import ThemeSwitcher from '../svg/ThemeSwitcher'
 import { OutlineButton, RoundButton, SolidButton } from '../ui/Button'
+import GenericNav from '../ui/Nav'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -11,16 +12,8 @@ const Header = styled.header`
   padding: 1.5rem 0;
 `
 
-const Nav = styled.nav`
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
-  max-width: ${({ theme }) => theme.width.max_desktop};
-
+const Nav = styled(GenericNav)`
   & > ul {
-    list-style: none;
-    display: flex;
     gap: 1.4rem;
   }
 `
