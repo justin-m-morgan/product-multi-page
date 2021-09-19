@@ -1,14 +1,20 @@
 import styled from 'styled-components'
 
+
 const Button = styled.button`
-  padding: 0.5rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   border-radius: 4px;
   font-weight: 800;
 `
 
 const SolidButton = styled(Button)`
-  background-color: ${({ theme }) => theme.colors.green};
-  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme, inverted }) =>
+    inverted ? theme.colors.white : theme.colors.green};
+  color: ${({ theme, inverted }) =>
+    inverted ? theme.colors.green : theme.colors.white};
+  box-shadow: 3px 3px 5px
+    ${({ inverted }) =>
+      inverted ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.3)'};
 `
 
 const OutlineButton = styled(Button)`

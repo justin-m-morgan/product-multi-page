@@ -60,10 +60,10 @@ const Text = styled.p``
 
 const Button = styled(SolidButton)`
   margin-top: auto;
-  background-color: ${({ theme, featured }) =>
+  /* background-color: ${({ theme, featured }) =>
     featured ? theme.colors.white : theme.colors.green};
   color: ${({ theme, featured }) =>
-    featured ? theme.colors.green : theme.colors.white};
+    featured ? theme.colors.green : theme.colors.white}; */
 `
 
 const prices = [
@@ -106,7 +106,9 @@ const Card = ({ level, description, price, unit, features, featured }) => (
         <Text key={feature}>{feature}</Text>
       ))}
     </FeatureList>
-    <Button featured={featured}>Order Now</Button>
+    <Button inverted={featured} featured={featured}>
+      Order Now
+    </Button>
   </PricingCard>
 )
 
