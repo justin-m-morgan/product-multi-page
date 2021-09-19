@@ -44,6 +44,7 @@ export const theme = {
     grey_900: '#1F2E35',
     grey_600: '#30444E',
     grey_300: '#475E69',
+    grey_200: '#172E29',
     grey_100: '#E4E9F3',
   },
 }

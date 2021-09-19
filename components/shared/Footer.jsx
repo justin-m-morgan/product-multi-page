@@ -127,7 +127,7 @@ const SubList = ({ heading, routes }) => (
       <LinkSubListHeading>{heading}</LinkSubListHeading>
     </li>
     {routes.map(([href, text]) => (
-      <NextLink href={href}>
+      <NextLink href={href} key={href}>
         <Link>{text}</Link>
       </NextLink>
     ))}

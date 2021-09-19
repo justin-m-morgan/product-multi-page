@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 const Header = styled.header`
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 3rem;
 `
 
 const Nav = styled(GenericNav)`
