@@ -26,7 +26,7 @@ This is a buildout of a publicly available Figma design.
 
 ### Links
 
-- Live Site URL: [Vercel](product-multi-page.vercel.app)
+- Live Site URL: [Vercel](https://product-multi-page.vercel.app)
 - Source Figma Design File URL: [Figma](https://www.figma.com/file/XFFrNxurtkurMGHdy5HcFh/MyProduct-Community)
 
 ## My process
